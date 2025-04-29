@@ -4,11 +4,13 @@ public class Employee {
     String name;
     int id;
     double salary;
+    String address;
 
-    public Employee(String name, int id, double salary){
+    public Employee(String name, int id, double salary, String address){
         this.name = name;
         this.id = id;
         this.salary = salary;
+        this.address = address;
 
     }
 
@@ -16,10 +18,11 @@ public class Employee {
         System.out.println("Employee ID:" + id);
         System.out.println("Employee Name:" + name);
         System.out.println("Employee Salary:" + salary);
+        System.out.println("Employee Address:" + address);
     }
 
     public static void main(String[] args) {
-        Employee emp1 = new Employee("Darshan", 307,25000);
+        Employee emp1 = new Employee("Darshan", 307,25000, "Hubli");
         emp1.displayInfo();
     }
     
